@@ -109,6 +109,30 @@ body {
   cursor: pointer;
 }
 
+/* Align the form inputs and button */
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#contact-form div {
+  flex: 1;
+  min-width: 200px;
+}
+
+#contact-form textarea {
+  resize: none; /* Prevent textarea resizing */
+}
+
+#contact-form button {
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+}
+
+
 
 /* Footer */
 footer {
