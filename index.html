@@ -4,103 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mehedi Hasan - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
+
   <!-- Navigation -->
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Mehedi Hasan</h1>
+  <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">Mehedi Hasan</h1>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
       </nav>
     </div>
-    
-  <form id="contact-form">
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Your email..." required>
-    <label for="message">Message:</label>
-    <textarea id="message" placeholder="Your message..." required></textarea>
-    <button type="submit">Send</button>
-  </form>
-    
   </header>
 
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Hello, I'm Mehedi Hasan</h1>
+      <p class="text-lg">An Open Source, AI, and Cybersecurity Enthusiast | Linux & Unix Advocate</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-100">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am an open-source, AI, and cybersecurity enthusiast with expertise in Linux and Unix systems.
-        I have strong debugging skills, a passion for problem-solving, and a track record of building
-        secure, innovative projects.
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        I am an open-source, AI, and cybersecurity enthusiast passionate about Linux and Unix systems. 
+        With strong debugging skills and expertise in machine learning, I aim to solve complex problems and build secure, innovative solutions.
       </p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Smart Contact Manager</h3>
-          <p>A secure CRUD-based contact management system.</p>
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-blue-100 p-6 rounded shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-xl font-bold mb-2">Smart Contact Manager</h3>
+          <p>A secure CRUD-based contact management system using Spring Boot and MySQL.</p>
         </div>
-        <div class="project-card">
-          <h3>Bracu Student Essentials</h3>
-          <p>A platform for university students to trade essentials.</p>
+        <div class="bg-blue-100 p-6 rounded shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-xl font-bold mb-2">Bracu Student Essentials</h3>
+          <p>A platform for university students to trade essentials built with PHP and SQL.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>Linux Systems</li>
-        <li>Cybersecurity</li>
-        <li>Machine Learning</li>
-      </ul>
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div class="bg-blue-200 p-4 rounded">Python</div>
+        <div class="bg-blue-200 p-4 rounded">Linux Systems</div>
+        <div class="bg-blue-200 p-4 rounded">Cybersecurity</div>
+        <div class="bg-blue-200 p-4 rounded">Machine Learning</div>
+        <div class="bg-blue-200 p-4 rounded">Debugging</div>
+        <div class="bg-blue-200 p-4 rounded">React</div>
+        <div class="bg-blue-200 p-4 rounded">Spring Boot</div>
+        <div class="bg-blue-200 p-4 rounded">Penetration Testing</div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:mh13.mehedi.hasan@gmail.com">mh13.mehedi.hasan@gmail.com</a></p>
-      <ul class="social-links">
-        <li><a href="https://github.com/mH-13" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
-        <li><a href="https://linkedin.com/in/mehedihasan-mh13" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="mb-4">Feel free to reach out via email or connect with me on LinkedIn!</p>
+      <ul class="flex justify-center space-x-6">
+        <li><a href="mailto:mh13.mehedi.hasan@gmail.com" class="text-blue-600"><i class="fa fa-envelope"></i> Email</a></li>
+        <li><a href="https://github.com/mH-13" class="text-blue-600"><i class="fa fa-github"></i> GitHub</a></li>
+        <li><a href="https://linkedin.com/in/mehedihasan-mh13" class="text-blue-600"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
       </ul>
     </div>
   </section>
 
-
-  <!-- Project Modal -->
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <span id="close-modal" class="close-btn">&times;</span>
-      <div id="modal-content"></div>
-    </div>
-  </div>
-
-
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2024 Mehedi Hasan. All rights reserved.</p>
-    </div>
+  <footer class="bg-blue-600 text-white text-center py-4">
+    <p>© 2024 Mehedi Hasan. All rights reserved.</p>
   </footer>
 </body>
 </html>
