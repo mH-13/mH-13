@@ -8,39 +8,43 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 transition-all duration-500">
 
   <!-- Navigation -->
-  <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">Mehedi Hasan</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#projects" class="hover:underline">Projects</a></li>
-          <li><a href="#skills" class="hover:underline">Skills</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-lg flex justify-between items-center py-4 px-6">
+    <h1 class="text-2xl font-bold">Mehedi Hasan</h1>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#skills" class="hover:underline">Skills</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="px-4 py-2 rounded shadow bg-gray-300 text-gray-800 hover:bg-gray-400 transition-all">
+      <i id="dark-mode-icon" class="fas fa-moon"></i>
+    </button>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-blue-600 text-white py-20">
+  <section class="relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-20 overflow-hidden">
     <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold mb-4">Hello, I'm Mehedi Hasan</h1>
-      <p class="text-lg">An Open Source, AI, and Cybersecurity Enthusiast | Linux & Unix Advocate</p>
+      <h1 class="text-4xl font-bold mb-4 animate-fade-in">Hello, I'm Mehedi Hasan</h1>
+      <p class="text-lg mb-6 animate-fade-in-delay">An Open Source, AI, and Cybersecurity Enthusiast | Linux & Unix Advocate</p>
       <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-100">
         Get in Touch
       </a>
     </div>
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <canvas id="background-animation"></canvas>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-100">
+  <section id="about" class="py-16 bg-gray-100 dark:bg-gray-800">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="text-lg max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 dark:text-white">About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto dark:text-gray-300">
         I am an open-source, AI, and cybersecurity enthusiast passionate about Linux and Unix systems. 
         With strong debugging skills and expertise in machine learning, I aim to solve complex problems and build secure, innovative solutions.
       </p>
@@ -48,9 +52,9 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-white">
+  <section id="projects" class="py-16 bg-white dark:bg-gray-900">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+      <h2 class="text-3xl font-bold text-center mb-6 dark:text-white">Projects</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-blue-100 p-6 rounded shadow-lg transform hover:scale-105 transition">
           <h3 class="text-xl font-bold mb-2">Smart Contact Manager</h3>
@@ -65,47 +69,48 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-16 bg-gray-100">
+  <section id="skills" class="py-16 bg-gray-100 dark:bg-gray-800">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+      <h2 class="text-3xl font-bold text-center mb-6 dark:text-white">Skills</h2>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-        <div class="bg-blue-200 p-4 rounded">Python</div>
-        <div class="bg-blue-200 p-4 rounded">Linux Systems</div>
-        <div class="bg-blue-200 p-4 rounded">Cybersecurity</div>
-        <div class="bg-blue-200 p-4 rounded">Machine Learning</div>
-        <div class="bg-blue-200 p-4 rounded">Debugging</div>
-        <div class="bg-blue-200 p-4 rounded">React</div>
-        <div class="bg-blue-200 p-4 rounded">Spring Boot</div>
-        <div class="bg-blue-200 p-4 rounded">Penetration Testing</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Python</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Linux Systems</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Cybersecurity</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Machine Learning</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Debugging</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">React</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Spring Boot</div>
+        <div class="bg-blue-200 p-4 rounded dark:bg-blue-500">Penetration Testing</div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white">
+  <section id="contact" class="py-16 bg-white dark:bg-gray-900">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
-      <p class="text-center mb-6">Feel free to reach out via email or send a message!</p>
-      <form id="contact-form" class="flex flex-wrap justify-center gap-4">
+      <h2 class="text-3xl font-bold text-center mb-6 dark:text-white">Contact Me</h2>
+      <form id="contact-form" class="flex flex-wrap justify-center gap-4" onsubmit="sendEmail(event)">
         <div class="flex flex-col w-full sm:w-auto">
-          <label for="email" class="text-sm mb-1">Email:</label>
-          <input type="email" id="email" class="border border-gray-300 rounded px-4 py-2 w-full" placeholder="Your email..." required>
+          <label for="email" class="text-sm mb-1 dark:text-gray-300">Email:</label>
+          <input type="email" id="email" class="border border-gray-300 rounded px-4 py-2 w-full dark:border-gray-600 dark:bg-gray-700 dark:text-white" placeholder="Your email..." required>
         </div>
         <div class="flex flex-col w-full sm:w-auto flex-grow">
-          <label for="message" class="text-sm mb-1">Message:</label>
-          <textarea id="message" class="border border-gray-300 rounded px-4 py-2 w-full" placeholder="Your message..." required></textarea>
+          <label for="message" class="text-sm mb-1 dark:text-gray-300">Message:</label>
+          <textarea id="message" class="border border-gray-300 rounded px-4 py-2 w-full dark:border-gray-600 dark:bg-gray-700 dark:text-white" placeholder="Your message..." required></textarea>
         </div>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-all">
           Send
         </button>
       </form>
+      <p id="response-message" class="mt-4 text-center"></p>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="bg-blue-600 text-white text-center py-4">
     <p>© 2024 Mehedi Hasan. All rights reserved.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
