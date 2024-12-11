@@ -1,27 +1,103 @@
-/* Hero Section Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* General Section Styling */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.animate-fade-in {
-  animation: fadeIn 1s ease-in-out;
+section {
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-.animate-fade-in-delay {
-  animation: fadeIn 1.5s ease-in-out;
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Background Canvas */
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+/* Projects Section */
+#projects {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+#projects .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#projects .project-card {
+  background-color: #4a5568;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Section */
+#skills {
+  background-color: #1a202c;
+  color: #ffffff;
+}
+
+#skills .grid {
+  display: grid;
+  gap: 1rem;
+}
+
+#skills .grid div {
+  background-color: #2b6cb0;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#skills .grid div:hover {
+  transform: translateY(-5px);
+  background-color: #2c5282;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ffffff;
+  color: #1a202c;
+}
+
+#contact button {
+  transition: transform 0.3s ease;
+}
+
+#contact button:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark #projects {
+  background-color: #1a202c;
+}
+
+body.dark #skills {
+  background-color: #121212;
+}
+
+body.dark #contact {
+  background-color: #1a202c;
+  color: #ffffff;
+}
+
+body.dark button {
+  background-color: #444444;
+}
+
+body.dark button:hover {
+  background-color: #333333;
 }
