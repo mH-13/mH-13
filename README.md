@@ -40,72 +40,37 @@ I'm a passionate **Computer Science graduate** with expertise in **Machine Learn
 
 ## 🔧 Tech Stack  
 
-### **Languages & Frameworks**  
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54) 
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)  
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) 
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white) 
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D) 
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?style=flat&logo=nuxt.js&logoColor=white) 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) 
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white) 
-![Apache Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=flat&logo=apache-tomcat&logoColor=black) 
-![Unity](https://img.shields.io/badge/Unity-100000?style=flat&logo=unity&logoColor=white)  
+<table>
+  <tr>
+    <td valign="top">
+      <h3>Languages & Frameworks</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54">
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white">
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white">
+        <img src="https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D">
+      </p>
+    </td>
+    <td valign="top">
+      <h3>Databases & Cloud</h3>
+      <p>
+        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white">
+        <img src="https://img.shields.io/badge/MySQL-005C84?style=flat&logo=mysql&logoColor=white">
+        <img src="https://img.shields.io/badge/Firebase-039BE5?style=flat&logo=firebase">
+        <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white">
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white">
+      </p>
+    </td>
+  </tr>
+</table>
 
-### **Web Technologies**  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) 
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)  
-
-### **Databases & Cloud**  
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white) 
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=flat&logo=mysql&logoColor=white) 
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=flat&logo=firebase) 
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white) 
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)  
-
-### **Software Engineering & DevOps**  
-![OOP](https://img.shields.io/badge/OOP-0078D6?style=flat&logo=code&logoColor=white) 
-![Algorithms](https://img.shields.io/badge/Algorithms-FFA500?style=flat&logo=thealgorithms&logoColor=white) 
-![Data Structures](https://img.shields.io/badge/Data%20Structures-008080?style=flat&logo=databricks&logoColor=white)  
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) 
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) 
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) 
-![CI/CD](https://img.shields.io/badge/CI/CD-3E8B93?style=flat&logo=githubactions&logoColor=white)  
-
-### **Competitive Programming**  
-![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white) 
-![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=flat&logo=codeforces&logoColor=white)  
-
-### **Cybersecurity**  
-![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-FF0000?style=flat&logo=kali-linux&logoColor=white) 
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-222222?style=flat&logo=hackthebox&logoColor=white) 
-![picoCTF](https://img.shields.io/badge/picoCTF-0A66C2?style=flat&logo=ctf&logoColor=white)  
-
-### **AI/ML & Data Science**  
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) 
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) 
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-2F74C0?style=flat&logo=tensorflow&logoColor=white)  
-![3D CNNs](https://img.shields.io/badge/3D%20CNNs-008080?style=flat&logo=deepmind&logoColor=white) 
-![SE Blocks](https://img.shields.io/badge/SE%20Blocks-FF4500?style=flat&logo=openaigym&logoColor=white) 
-![Data Preprocessing](https://img.shields.io/badge/Data%20Preprocessing-2D8CFF?style=flat&logo=databricks&logoColor=white)  
-
-
-<!-- Optional Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git" />
-</p>
 
 ---
 
