@@ -1,2 +1,1 @@
-# cv
-This is for personal protfolio. I used HTML, CSS and Javascript for this
+Passionate Computer Science graduate with expertise in \textbf{Machine Learning, Cybersecurity, and Software Engineering}. Proficient in \textbf{Python, C++, JavaScript}, and skilled in \textbf{Linux system administration, containerization (Docker), and version control (Git)}. Strong problem-solving abilities with hands-on experience in \textbf{LeetCode, Codeforces}, and open-source contributions. Skilled in \textbf{JavaScript, HTML, CSS}, and knowledgeable in \textbf{OOP, Algorithms, and Data Structures}. Passionate about writing clean, maintainable, and scalable code. Eager to contribute to impactful projects and enhance user experiences through performance-optimized web applications.
