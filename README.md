@@ -54,6 +54,8 @@ I'm a passionate **Computer Science graduate** with expertise in **Machine Learn
         <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
         <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white">
         <img src="https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D">
+        <img src="https://img.shields.io/badge/Nuxt.js-00C58E?style=flat&logo=nuxt.js&logoColor=white">
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white">
       </p>
     </td>
     <td valign="top">
@@ -63,13 +65,56 @@ I'm a passionate **Computer Science graduate** with expertise in **Machine Learn
         <img src="https://img.shields.io/badge/MySQL-005C84?style=flat&logo=mysql&logoColor=white">
         <img src="https://img.shields.io/badge/Firebase-039BE5?style=flat&logo=firebase">
         <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white">
-      </p>
-      <p>
         <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white">
       </p>
     </td>
   </tr>
+  <tr>
+    <td valign="top">
+      <h3>Software Engineering</h3>
+      <p>
+        <img src="https://img.shields.io/badge/OOP-009688?style=flat">
+        <img src="https://img.shields.io/badge/Algorithms-ffcc00?style=flat">
+        <img src="https://img.shields.io/badge/Data%20Structures-007396?style=flat">
+      </p>
+      <h3>Competitive Programming</h3>
+      <p>
+        <img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=black">
+        <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=flat">
+      </p>
+    </td>
+    <td valign="top">
+      <h3>DevOps & Tools</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Linux-333?style=flat&logo=linux&logoColor=white">
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white">
+        <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white">
+        <img src="https://img.shields.io/badge/CI/CD-0062CC?style=flat">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>Cybersecurity</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Penetration%20Testing-990000?style=flat">
+        <img src="https://img.shields.io/badge/Ethical%20Hacking-292F36?style=flat">
+        <img src="https://img.shields.io/badge/picoCTF-FF4500?style=flat">
+      </p>
+    </td>
+    <td valign="top">
+      <h3>AI/ML & Data</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white">
+        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white">
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white">
+        <img src="https://img.shields.io/badge/3D%20CNNs-0088CC?style=flat">
+        <img src="https://img.shields.io/badge/SE%20Blocks-673AB7?style=flat">
+      </p>
+    </td>
+  </tr>
 </table>
+
 
 
 ---
