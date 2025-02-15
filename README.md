@@ -73,7 +73,38 @@
 
 <!-- GitHub Readme Stats -->
 <p align="center">
-  <a href="https://github.com/faridulreza">
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&theme=radical" alt="Mehedi's GitHub stats" height="180px"/>
+  </a>
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&theme=radical" alt="Top Languages" height="180px"/>
+  </a>
+</p>
+
+<!-- Streak Stats -->
+<p align="center">
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=mH-13&theme=radical" alt="mH-13's Streak Stats" />
+  </a>
+</p>
+
+<!-- Trophies (Optional) -->
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=mH-13&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<!-- GitHub Readme Stats -->
+<p align="center">
+  <a href="https://github.com/mH-13">
     <img src="https://github-readme-stats.vercel.app/api?username=faridulreza&show_icons=true&theme=radical" alt="faridulreza's GitHub stats" height="180px"/>
   </a>
   <a href="https://github.com/faridulreza">
