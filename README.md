@@ -2,6 +2,157 @@
 <h1 align="center">Hi there, I'm Mehedi Hasan! 👋</h1>
 <h3 align="center">Software Developer | Full-Stack Enthusiast | Tech Explorer</h3>
 
+<!-- Profile Views Badge -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=mH-13&label=Profile%20views&color=0e75b6&style=flat" alt="mH-13" />
+</p>
+
+<!-- Socials -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/mehedihasan-mh13/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/mH-13" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:mh13.mehedi.hasan@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://mh-13.github.io/mH-13/" target="_blank">
+    <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
+  </a>
+</p>
+
+---
+
+## 👨‍💻 About Me
+
+I'm a passionate **Computer Science graduate** with expertise in **Machine Learning, Cybersecurity, and Software Engineering**. I love solving complex problems, building scalable applications, and contributing to open-source projects.
+
+**Highlights:**
+- 🎓 Graduated from **BRAC University** with a **CGPA of 3.63** in **Computer Science & Engineering**.
+- 🔍 Conducted research on **ASD detection using 3D CNNs and SE blocks**.
+- 🏆 Competitive programming enthusiast (Physics & Math Olympiad, Inter & Intra-university contests).
+- 🛡️ Participated in **picoCTF** and found **12 flags** in cybersecurity challenges.
+- 📚 Experienced in teaching **Python & Java** to university students.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Languages:** Python, C++, Java, JavaScript
+- **Web Technologies:** HTML, CSS, JavaScript (ES6+)
+- **Software Engineering:** OOP, Algorithms, Data Structures
+- **DevOps & Tools:** Linux system administration, Docker, Git, CI/CD
+- **Competitive Programming:** LeetCode, Codeforces
+- **Cybersecurity:** Penetration Testing, Ethical Hacking, picoCTF experience
+- **Machine Learning:** 3D CNNs, SE Blocks, Data Preprocessing
+
+<!-- Optional Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git" />
+</p>
+
+---
+
+## 🔥 What I'm Working On
+
+- 🚀 Building performance-optimized web applications.
+- 🔍 Exploring cybersecurity & ethical hacking.
+- 🧠 Enhancing AI/ML models for real-world applications.
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&theme=radical" alt="mH-13's GitHub stats" height="180px"/>
+  </a>
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&theme=radical" alt="Top Languages" height="180px"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/mH-13">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=mH-13&theme=radical" alt="mH-13's Streak Stats" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=mH-13&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
+  </a>
+</p>
+
+---
+
+## 🔗 Let's Connect
+
+- **LinkedIn:** [Mehedi Hasan (mH-13)](https://www.linkedin.com/in/mehedihasan-mh13/)
+- **GitHub:** [mH-13](https://github.com/mH-13)
+- **Email:** [mh13.mehedi.hasan@gmail.com](mailto:mh13.mehedi.hasan@gmail.com)
+- **Website:** [mh-13.github.io/mH-13](https://mh-13.github.io/mH-13/)
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=90&section=footer" alt="footer wave"/>
+</p>
+
+Let's build something amazing together! 🚀
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Banner or Short Intro -->
+<h1 align="center">Hi there, I'm Mehedi Hasan! 👋</h1>
+<h3 align="center">Software Developer | Full-Stack Enthusiast | Tech Explorer</h3>
+
 <!-- Profile Views Badge (Optional) -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=faridulreza&label=Profile%20views&color=0e75b6&style=flat" alt="faridulreza" />
@@ -99,33 +250,6 @@
 
 
 
-
-
-
-<!-- GitHub Readme Stats -->
-<p align="center">
-  <a href="https://github.com/mH-13">
-    <img src="https://github-readme-stats.vercel.app/api?username=faridulreza&show_icons=true&theme=radical" alt="faridulreza's GitHub stats" height="180px"/>
-  </a>
-  <a href="https://github.com/faridulreza">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=faridulreza&layout=compact&theme=radical" alt="Top Languages" height="180px"/>
-  </a>
-</p>
-
-<!-- Streak Stats -->
-<p align="center">
-  <a href="https://github.com/faridulreza">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=faridulreza&theme=radical" alt="faridulreza's Streak Stats" />
-  </a>
-</p>
-
-<!-- Trophies (Optional) -->
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=faridulreza&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
-  </a>
-</p>
-
 ---
 
 ## 🔗 Let's Connect
@@ -143,16 +267,6 @@
 
 
 
-
-
-
-
-
-
-
-
-# Hi there! 👋 I'm Md Mehedi Hasan
-
 ## 🚀 About Me
 I'm a passionate **Computer Science graduate** with expertise in **Machine Learning, Cybersecurity, and Software Engineering**. I love solving complex problems, building scalable applications, and contributing to open-source projects.
 
@@ -169,8 +283,6 @@ I'm a passionate **Computer Science graduate** with expertise in **Machine Learn
 - 🔍 Exploring cybersecurity & ethical hacking  
 - 🧠 Enhancing AI/ML models for real-world applications  
 
-## 📈 GitHub Stats
-![Mehedi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=MehediHasan42&show_icons=true&theme=radical)
 
 ## 📫 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/mehedihasan42/)  
