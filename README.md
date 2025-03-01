@@ -82,7 +82,9 @@
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&theme=radical&hide_border=true" />
   
   <!-- Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mH-13&theme=radical&hide_border=true" />
+  <!-- <img src="https://github-readme-streak-stats.herokuapp.com/?user=mH-13&theme=radical&hide_border=true" /> -->
+  
+  <img src="https://streak-stats.demolab.com?user=mH-13&theme=radical&hide_border=true" />
   
   <!-- Trophies -->
   <img src="https://github-profile-trophy.vercel.app/?username=mH-13&theme=radical&no-frame=true&row=1&column=7" />
