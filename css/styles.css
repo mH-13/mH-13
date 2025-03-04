@@ -1,20 +1,20 @@
-/* Define CSS Variables for Dark and Light Themes */
+/* Dark Forest Theme Variables */
 :root {
-  --bg-color: #2B2B2B;
-  --text-color: #dcdcdc;
-  --accent-color: #b5651d;
-  --section-bg: #333333;
-  --border-color: #444444;
-  --nav-bg: #2B2B2B;
+  --bg-color: #0D2C1F;
+  --text-color: #C7E0C4;
+  --accent-color: #3B7A57;
+  --section-bg: #163F33;
+  --border-color: #2A5C4C;
+  --nav-bg: #0D2C1F;
 }
 
 body.light {
-  --bg-color: #f7f7f7;
-  --text-color: #333333;
-  --accent-color: #cc7722;
-  --section-bg: #ffffff;
-  --border-color: #e0e0e0;
-  --nav-bg: #ffffff;
+  --bg-color: #E6F2E6;
+  --text-color: #0D2C1F;
+  --accent-color: #3B7A57;
+  --section-bg: #C7E0C4;
+  --border-color: #B2C8B2;
+  --nav-bg: #E6F2E6;
 }
 
 /* Base Styles */
@@ -124,7 +124,7 @@ body {
 .hero-subtitle {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .btn {
   display: inline-block;
@@ -136,7 +136,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: #a2501a;
+  background-color: #2E8B57;
 }
 
 /* Sections */
