@@ -1,110 +1,127 @@
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+/* Smooth Scrolling for Navigation Links */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   });
 });
 
-// Enhanced Dark Mode Toggle with Animation
+/* Dark Mode Toggle */
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 const body = document.body;
 const darkModeIcon = document.getElementById("dark-mode-icon");
-
-// Initialize theme without system dependency
-const savedTheme = localStorage.getItem("theme") || "light";
+const savedTheme = localStorage.getItem("theme") || "dark"; // default theme is dark
 body.classList.add(savedTheme);
 darkModeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
-
-// Toggle dark mode with smooth transition
 body.style.transition = "background-color 0.3s, color 0.3s";
 darkModeToggle.addEventListener("click", () => {
-  const isDarkMode = body.classList.contains("dark");
-  body.classList.toggle("dark", !isDarkMode);
-  body.classList.toggle("light", isDarkMode);
-
-  darkModeIcon.className = isDarkMode ? "fas fa-moon" : "fas fa-sun";
-  localStorage.setItem("theme", isDarkMode ? "light" : "dark");
+  if(body.classList.contains("dark")){
+    body.classList.remove("dark");
+    body.classList.add("light");
+    darkModeIcon.className = "fas fa-moon";
+    localStorage.setItem("theme", "light");
+  } else {
+    body.classList.remove("light");
+    body.classList.add("dark");
+    darkModeIcon.className = "fas fa-sun";
+    localStorage.setItem("theme", "dark");
+  }
 });
 
-// Background Animation for Hero Section
+/* Background Particle Animation with Mouse Interaction */
 const canvas = document.getElementById("background-animation");
-const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+if (canvas) {
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
-const particlesArray = [];
-const numberOfParticles = 150;
-
-class Particle {
-  constructor(x, y, size, speedX, speedY, color) {
-    this.x = x;
-    this.y = y;
-    this.size = size;
-    this.speedX = speedX;
-    this.speedY = speedY;
-    this.color = color;
-  }
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-  }
-  update() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-
-    if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
-    if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
-  }
-}
-
-// Initialize particles with varying speeds and sizes
-for (let i = 0; i < numberOfParticles; i++) {
-  const size = Math.random() * 4 + 1;
-  const x = Math.random() * canvas.width;
-  const y = Math.random() * canvas.height;
-  const speedX = (Math.random() - 0.5) * 3;
-  const speedY = (Math.random() - 0.5) * 3;
-  const color = "rgba(200, 200, 255, 0.7)";
-  particlesArray.push(new Particle(x, y, size, speedX, speedY, color));
-}
-
-canvas.addEventListener("mousemove", (e) => {
-  particlesArray.push(new Particle(e.clientX, e.clientY, 5, 0, 0, "rgba(255, 150, 0, 0.8)"));
-});
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particlesArray.forEach((particle) => {
-    particle.draw();
-    particle.update();
+  let mouse = { x: null, y: null };
+  canvas.addEventListener("mousemove", e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
   });
-  requestAnimationFrame(animate);
-}
-animate();
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
 
-// EmailJS Integration
+  class Particle {
+    constructor(x, y, size, speedX, speedY, color) {
+      this.x = x;
+      this.y = y;
+      this.size = size;
+      this.speedX = speedX;
+      this.speedY = speedY;
+      this.color = color;
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
+      if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
+      if (mouse.x !== null && mouse.y !== null) {
+        const dx = this.x - mouse.x;
+        const dy = this.y - mouse.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        const interactionRadius = 80;
+        if (distance < interactionRadius) {
+          const angle = Math.atan2(dy, dx);
+          const force = (interactionRadius - distance) / interactionRadius;
+          this.x += Math.cos(angle) * force * 3;
+          this.y += Math.sin(angle) * force * 3;
+        }
+      }
+    }
+  }
+
+  const particlesArray = [];
+  const numberOfParticles = 150;
+  for (let i = 0; i < numberOfParticles; i++) {
+    const size = Math.random() * 2 + 1;
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height;
+    const speedX = (Math.random() - 0.5) * 1.5;
+    const speedY = (Math.random() - 0.5) * 1.5;
+    const color = "rgba(180, 140, 100, 0.8)";
+    particlesArray.push(new Particle(x, y, size, speedX, speedY, color));
+  }
+
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particlesArray.forEach(particle => {
+      particle.draw();
+      particle.update();
+    });
+    requestAnimationFrame(animateParticles);
+  }
+  animateParticles();
+}
+
+/* EmailJS Integration */
 (function () {
   emailjs.init("-56sYWvGY7ODbFNFN");
 })();
-
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document.getElementById("contact-form")?.addEventListener("submit", function (e) {
   e.preventDefault();
   const responseMessage = document.getElementById("response-message");
   responseMessage.textContent = "Sending...";
   emailjs.sendForm("service_k4hy4kf", "template_5to00np", this).then(
     () => {
       responseMessage.textContent = "Message sent successfully!";
-      responseMessage.className = "text-green-600";
+      responseMessage.style.color = "green";
       this.reset();
     },
     () => {
       responseMessage.textContent = "Failed to send message.";
-      responseMessage.className = "text-red-600";
+      responseMessage.style.color = "red";
     }
   );
 });
