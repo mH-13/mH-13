@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mehedi Hasan - Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body class="dark">
+  <!-- Canvas for Star Field Background -->
+  <canvas id="background-animation"></canvas>
+
   <!-- Navigation -->
   <header class="nav">
     <div class="nav-left">
@@ -21,7 +27,8 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="articles.html">Articles</a></li>
-        <li><a href="cooking.html">Recipes</a></li>
+        <!-- Newly added AI Experiments link -->
+        <li><a href="ai.html">AI Experiments</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -30,9 +37,8 @@
     </button>
   </header>
 
-  <!-- Hero Section with Particle Canvas -->
+  <!-- Hero Section -->
   <section class="hero">
-    <canvas id="background-animation"></canvas>
     <div class="hero-content">
       <div class="hero-logo-container">
         <img src="images/goku.gif" alt="Animated Goku" class="hero-logo" />
@@ -58,7 +64,8 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a Computer Science graduate with a deep passion for open source, AI, and cybersecurity. I love solving problems using technology while exploring creative hobbies like writing articles and experimenting with cooking recipes.
+        I am a Computer Science graduate with a deep passion for open source, AI, and cybersecurity. 
+        I love solving problems using technology while exploring creative hobbies like writing articles.
       </p>
     </div>
   </section>
@@ -121,11 +128,22 @@
       <form id="contact-form" class="contact-form">
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="user_email" placeholder="Your email..." required />
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Your email..."
+            required
+          />
         </div>
         <div class="form-group">
           <label for="message">Message:</label>
-          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message..."
+            required
+          ></textarea>
         </div>
         <button type="submit" class="btn">Send</button>
       </form>

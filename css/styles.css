@@ -1,20 +1,20 @@
-/* Dark Forest Theme Variables */
+/* Theme Variables */
 :root {
-  --bg-color: #0D2C1F;
-  --text-color: #C7E0C4;
-  --accent-color: #3B7A57;
-  --section-bg: #163F33;
-  --border-color: #2A5C4C;
-  --nav-bg: #0D2C1F;
+  --bg-color: #0d0d0d;
+  --text-color: #f2f2f2;
+  --accent-color: #3b7a57;
+  --section-bg: #1a1a1a;
+  --border-color: #333;
+  --nav-bg: #0d0d0d;
 }
 
 body.light {
-  --bg-color: #E6F2E6;
-  --text-color: #0D2C1F;
-  --accent-color: #3B7A57;
-  --section-bg: #C7E0C4;
-  --border-color: #B2C8B2;
-  --nav-bg: #E6F2E6;
+  --bg-color: #fafafa;
+  --text-color: #111;
+  --accent-color: #3b7a57;
+  --section-bg: #eee;
+  --border-color: #ccc;
+  --nav-bg: #f2f2f2;
 }
 
 /* Base Styles */
@@ -24,6 +24,16 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Position the Canvas Behind Everything */
+#background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
 }
 
 /* Navigation */
@@ -86,22 +96,19 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  overflow: hidden;
   text-align: center;
   padding: 4rem 1rem;
-  background-color: var(--bg-color);
-}
-#background-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  background-color: transparent; /* Let the starfield show through */
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-content {
   position: relative;
   z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .hero-logo-container {
   width: 120px;
@@ -136,13 +143,13 @@ body {
   transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: #2E8B57;
+  background-color: #2e8b57;
 }
 
 /* Sections */
 .section {
   padding: 4rem 1rem;
-  background-color: var(--bg-color);
+  background-color: transparent;
   text-align: center;
 }
 .section-alt {
@@ -183,7 +190,7 @@ body {
 .project-card-inner {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 220px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
@@ -199,54 +206,28 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  background-color: var(--section-bg);
+  color: var(--text-color);
 }
-.project-card-front {
-  background-color: var(--bg-color);
+.project-card-front i {
+  margin-bottom: 0.5rem;
+}
+.project-card-front h3 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 .project-card-back {
-  background-color: var(--bg-color);
   transform: rotateY(180deg);
 }
 .project-card-back a {
   color: var(--accent-color);
   text-decoration: underline;
-}
-
-/* Articles & Recipes Lists */
-.articles-list, .recipes-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.article-summary, .recipe-card {
-  background-color: var(--section-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-.article-summary:hover, .recipe-card:hover {
-  transform: translateY(-5px);
-}
-.article-summary h3 a, .recipe-card h3 {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-.article-summary p, .recipe-card p {
-  opacity: 0.9;
-}
-
-/* Recipe Card Images */
-.recipe-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
 /* Skills Grid */
@@ -316,6 +297,26 @@ body {
 }
 .footer .social-links a:hover {
   color: var(--accent-color);
+}
+
+/* Article Summaries */
+.article-summary {
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.article-summary:hover {
+  transform: translateY(-5px);
+}
+.article-summary h3 a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.article-summary p {
+  opacity: 0.9;
 }
 
 /* Animations */

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Experiments - Mehedi Hasan</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="dark">
+  <!-- Canvas for Star Field Background -->
+  <canvas id="background-animation"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <img src="images/goku.gif" alt="Logo" class="logo-img" />
+      <h1 class="site-title">Mehedi Hasan</h1>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="ai.html" class="active">AI Experiments</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="toggle-btn">
+      <i id="dark-mode-icon" class="fas fa-sun"></i>
+    </button>
+  </header>
+
+  <!-- AI Experiments Content -->
+  <section class="section">
+    <div class="container">
+      <h2>AI Experiments &amp; Tools</h2>
+      <div class="grid">
+        <!-- 1 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-comments fa-3x"></i>
+              <h3>ChatGPT</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                A conversational AI chatbot by OpenAI ideal for brainstorming, code help, and creative writing.
+              </p>
+              <a href="https://chat.openai.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-comments-dollar fa-3x"></i>
+              <h3>Claude</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An AI assistant by Anthropic focused on safe, natural conversations. Great for generating ethical content.
+              </p>
+              <a href="https://www.anthropic.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-image fa-3x"></i>
+              <h3>DALL·E 2</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An advanced AI image generator from OpenAI. Create creative visuals from text prompts.
+              </p>
+              <a href="https://openai.com/dall-e-2" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-palette fa-3x"></i>
+              <h3>Midjourney</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An independent research lab’s AI that produces artistic images. Ideal for concept art and creative design.
+              </p>
+              <a href="https://www.midjourney.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-code fa-3x"></i>
+              <h3>Stable Diffusion</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An open-source text-to-image model for creative image generation. Perfect for customizable image synthesis.
+              </p>
+              <a href="https://stability.ai/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-pen-nib fa-3x"></i>
+              <h3>Jasper AI</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An AI content generator tailored for marketing and creative writing. Drafts blog posts and social media copy quickly.
+              </p>
+              <a href="https://www.jasper.ai/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-bullhorn fa-3x"></i>
+              <h3>Copy.ai</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                AI-powered tool for generating creative marketing copy and content ideas. Great for taglines, product descriptions, and ads.
+              </p>
+              <a href="https://www.copy.ai/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-video fa-3x"></i>
+              <h3>Synthesia</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                Converts text into professional videos with virtual presenters—ideal for training, marketing, or corporate comms.
+              </p>
+              <a href="https://www.synthesia.io/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-video-slash fa-3x"></i>
+              <h3>Lumen5</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                Transforms blog posts and text into engaging videos using AI. Great for social media and content marketing.
+              </p>
+              <a href="https://lumen5.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-wave-square fa-3x"></i>
+              <h3>Descript</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An all-in-one audio/video editing platform with AI-powered transcription and editing—perfect for podcasts and videos.
+              </p>
+              <a href="https://www.descript.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-brain fa-3x"></i>
+              <h3>RunwayML</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                A creative suite for video, image, and text generation using advanced AI models—ideal for designers and media pros.
+              </p>
+              <a href="https://runwayml.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-language fa-3x"></i>
+              <h3>DeepL</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                A highly accurate AI translation tool that provides fast, natural-sounding translations for global communication.
+              </p>
+              <a href="https://www.deepl.com/translator" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 13 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-spell-check fa-3x"></i>
+              <h3>Grammarly</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An AI writing assistant that improves grammar, clarity, and style—essential for professional writing and content creation.
+              </p>
+              <a href="https://www.grammarly.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fab fa-github fa-3x"></i>
+              <h3>GitHub Copilot</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An AI pair programmer that helps write code faster and smarter directly in your IDE. Great for boosting developer productivity.
+              </p>
+              <a href="https://github.com/features/copilot" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 15 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-user-astronaut fa-3x"></i>
+              <h3>Replika</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                A personal AI companion designed for supportive, empathetic conversation—ideal for mental wellness and companionship.
+              </p>
+              <a href="https://replika.ai/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fab fa-n icon-fa-3x"></i>
+              <h3>Notion AI</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                AI assistant integrated into Notion to automate tasks, summarize notes, and enhance productivity for teams and individuals.
+              </p>
+              <a href="https://www.notion.so/product/ai" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fab fa-canadian-maple-leaf fa-3x"></i>
+              <h3>Canva Magic Write</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                AI-powered text generator inside Canva that helps create compelling copy for presentations, social media, and marketing.
+              </p>
+              <a href="https://www.canva.com/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-book-open fa-3x"></i>
+              <h3>Tome</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                AI storytelling tool that quickly generates interactive presentations and narratives for business and educational purposes.
+              </p>
+              <a href="https://beta.tome.app/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 19 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-head-side-brain fa-3x"></i>
+              <h3>OpenAI Whisper</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                A powerful speech recognition system that can transcribe audio in multiple languages with high accuracy.
+              </p>
+              <a href="https://openai.com/blog/whisper/" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- 20 -->
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <i class="fas fa-robot fa-3x"></i>
+              <h3>Hugging Face Transformers</h3>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An open-source library of state-of-the-art machine learning models for NLP, vision, and more.
+              </p>
+              <a href="https://huggingface.co/docs/transformers/index" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more AI tool cards if you want! -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Mehedi Hasan. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/mH-13" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mehedihasan-mh13/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
