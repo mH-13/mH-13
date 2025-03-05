@@ -1,9 +1,9 @@
 /* Smooth Scrolling for Navigation Links */
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
+      behavior: "smooth"
     });
   });
 });
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 const body = document.body;
 const darkModeIcon = document.getElementById("dark-mode-icon");
-const savedTheme = localStorage.getItem("theme") || "dark"; // default to dark theme
+const savedTheme = localStorage.getItem("theme") || "dark";
 body.classList.add(savedTheme);
 darkModeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
 body.style.transition = "background-color 0.3s, color 0.3s";
@@ -56,7 +56,7 @@ if (canvas) {
         x: Math.random() * w,
         y: Math.random() * h,
         radius: Math.random() * 1.2,
-        speed: Math.random() * 0.5 + 0.2,
+        speed: Math.random() * 0.5 + 0.2
       });
     }
   }
@@ -64,12 +64,9 @@ if (canvas) {
   function updateStars() {
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
-      // Move star downward
       star.y += star.speed;
-      // Simple parallax effect: shift horizontally based on mouse.x
+      // Slight horizontal parallax effect
       star.x += (mouse.x - w / 2) * 0.00001 * star.speed;
-
-      // If star goes off screen, reset to top
       if (star.y > h) {
         star.y = 0;
         star.x = Math.random() * w;
@@ -78,8 +75,19 @@ if (canvas) {
   }
 
   function drawStars() {
-    ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = "white";
+    // Set background based on mode
+    if (body.classList.contains("dark")) {
+      // Dark mode background: deep black-blue
+      ctx.fillStyle = "#0d0d0d";
+    } else {
+      // Light mode background: soft off-white
+      ctx.fillStyle = "#f5f5f5";
+    }
+    ctx.fillRect(0, 0, w, h);
+
+    // Set star color based on mode
+    ctx.fillStyle = body.classList.contains("dark") ? "white" : "#333";
+
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
       ctx.beginPath();
@@ -94,13 +102,12 @@ if (canvas) {
     requestAnimationFrame(animate);
   }
 
-  // Initialize
   initCanvas();
   createStars();
   animate();
 }
 
-/* EmailJS Integration (same as before) */
+/* EmailJS Integration */
 (function () {
   emailjs.init("-56sYWvGY7ODbFNFN");
 })();
@@ -108,15 +115,15 @@ document.getElementById("contact-form")?.addEventListener("submit", function (e)
   e.preventDefault();
   const responseMessage = document.getElementById("response-message");
   responseMessage.textContent = "Sending...";
-  emailjs
-    .sendForm("service_k4hy4kf", "template_5to00np", this)
-    .then(() => {
+  emailjs.sendForm("service_k4hy4kf", "template_5to00np", this).then(
+    () => {
       responseMessage.textContent = "Message sent successfully!";
       responseMessage.style.color = "green";
       this.reset();
-    })
-    .catch(() => {
+    },
+    () => {
       responseMessage.textContent = "Failed to send message.";
       responseMessage.style.color = "red";
-    });
+    }
+  );
 });

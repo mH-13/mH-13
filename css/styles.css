@@ -4,15 +4,17 @@
   --text-color: #f2f2f2;
   --accent-color: #3b7a57;
   --section-bg: #1a1a1a;
+  --section-bg-trans: rgba(26, 26, 26, 0.5);
   --border-color: #333;
   --nav-bg: #0d0d0d;
 }
 
 body.light {
-  --bg-color: #fafafa;
+  --bg-color: #f5f5f5;
   --text-color: #111;
   --accent-color: #3b7a57;
   --section-bg: #eee;
+  --section-bg-trans: rgba(238, 238, 238, 0.5);
   --border-color: #ccc;
   --nav-bg: #f2f2f2;
 }
@@ -84,7 +86,7 @@ body {
 .toggle-btn {
   padding: 0.5rem 1rem;
   background-color: var(--section-bg);
-  border: none;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -98,7 +100,7 @@ body {
   position: relative;
   text-align: center;
   padding: 4rem 1rem;
-  background-color: transparent; /* Let the starfield show through */
+  background-color: transparent;
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -153,12 +155,17 @@ body {
   text-align: center;
 }
 .section-alt {
-  background-color: var(--section-bg);
+  background-color: var(--section-bg-trans);
 }
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+.about-container {
+  background-color: var(--section-bg-trans);
+  padding: 2rem;
+  border-radius: 8px;
 }
 .section h2 {
   font-size: 2rem;
@@ -210,7 +217,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: var(--section-bg);
+  background-color: var(--section-bg-trans);
   color: var(--text-color);
 }
 .project-card-front i {
@@ -235,7 +242,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 .grid-skills div {
-  background-color: var(--section-bg);
+  background-color: var(--section-bg-trans);
   border: 1px solid var(--border-color);
   padding: 1rem;
   border-radius: 4px;
@@ -301,7 +308,7 @@ body {
 
 /* Article Summaries */
 .article-summary {
-  background-color: var(--section-bg);
+  background-color: var(--section-bg-trans);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.5rem;

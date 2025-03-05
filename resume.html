@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Articles - Mehedi Hasan</title>
+  <title>Resume - Mehedi Hasan</title>
   <link rel="stylesheet" href="css/styles.css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
@@ -20,9 +20,9 @@
     <nav class="nav-links">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="articles.html">Articles</a></li>
         <li><a href="ai.html">AI Experiments</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
@@ -33,15 +33,23 @@
 
   <section class="section">
     <div class="container">
-      <h2>Today's Top Tech Articles</h2>
-      <div id="articles-list">
-        <!-- Articles will be loaded dynamically -->
-        <p>Loading articles...</p>
-      </div>
+      <h2>Resume</h2>
+      <p>
+        I am a Computer Science graduate with expertise in software engineering, machine learning, and cybersecurity. Below is an overview of my background and experiences.
+      </p>
+      <ul>
+        <li><strong>Education:</strong> B.Sc. in Computer Science from Brac University (GPA: 3.63/4.00)</li>
+        <li><strong>Thesis:</strong> Developed 3D CNN architectures for neurodevelopmental disorder detection using advanced techniques.</li>
+        <li><strong>Experience:</strong> Linux Systems Engineer, DevOps enthusiast, and CS Tutor with hands-on experience in Docker, cloud deployments, and distributed systems.</li>
+        <li><strong>Technical Skills:</strong> Python, C++, JavaScript, SQL, machine learning frameworks (TensorFlow, PyTorch), data engineering, and cybersecurity.</li>
+      </ul>
+      <p>
+        For more detailed information, please view or download my full resume:
+      </p>
+      <a href="pdf/Mehedi_Resume.pdf" target="_blank" class="btn">View PDF Resume</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>© 2024 Mehedi Hasan. All rights reserved.</p>
@@ -52,37 +60,6 @@
     </div>
   </footer>
 
-  <script>
-    // Example: Fetch articles from Hacker News (adjust as needed)
-    const articlesList = document.getElementById("articles-list");
-    fetch("https://hacker-news.firebaseio.com/v0/topstories.json")
-      .then((response) => response.json())
-      .then((ids) => {
-        const articlePromises = ids.slice(0, 10).map((id) =>
-          fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then((res) =>
-            res.json()
-          )
-        );
-        return Promise.all(articlePromises);
-      })
-      .then((articles) => {
-        articlesList.innerHTML = "";
-        articles.forEach((article) => {
-          if (!article) return;
-          const div = document.createElement("div");
-          div.classList.add("article-summary");
-          div.innerHTML = `
-            <h3><a href="${article.url}" target="_blank">${article.title}</a></h3>
-            <p>By: ${article.by || "unknown"}</p>
-          `;
-          articlesList.appendChild(div);
-        });
-      })
-      .catch((err) => {
-        console.error(err);
-        articlesList.innerHTML = "<p>Failed to load articles.</p>";
-      });
-  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
