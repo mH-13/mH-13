@@ -9,23 +9,25 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body class="dark">
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
   <!-- Canvas for Star Field Background -->
   <canvas id="background-animation"></canvas>
 
   <!-- Navigation -->
   <header class="nav">
     <div class="nav-left">
-      <img src="images/goku.gif" alt="Animated Goku Logo" class="logo-img" />
-      <h1 class="site-title">Mehedi Hasan</h1>
+      <img src="images/disk.jpg" alt="Animated Goku Logo" class="logo-img" />
+      <!-- <h1 class="site-title">Mehedi Hasan</h1> -->
     </div>
-    <nav class="nav-links">
+    <nav class="nav-links" > 
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="ai.html">AI Experiments</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -50,7 +52,7 @@
         }, 2000);
       </script>
       <p class="hero-subtitle">
-        A Computer Science Graduate | Passionate about open source, AI, and cybersecurity
+        Hello there 👋 Mehedi Hasan here 🌠 A Computer Science Graduate 💻  Passionate about ML, AI, Cybersecurity, and Software Engineering.
       </p>
       <a href="#projects" class="btn">View Projects</a>
     </div>
@@ -58,17 +60,19 @@
 
   <!-- About Me Section -->
   <section id="about" class="section">
-    <div class="container about-container">
+    <div class="container">
       <h2>About Me</h2>
-      <p>
-        I am a recent Computer Science graduate from Brac University with a strong foundation in problem solving, machine learning, cybersecurity, and software engineering. I have built secure web applications and designed data pipelines for large datasets – including a 4D fMRI analysis pipeline as part of my thesis on 3D CNN architectures for neurodevelopmental disorder detection.
-      </p>
-      <p>
-        My technical expertise spans Python, C++, JavaScript, and SQL, and I have hands-on experience in DevOps, Linux systems, and cloud-based deployments. As a passionate educator and team player, I have mentored students in computer science fundamentals while leading workshops on algorithms and data structures.
-      </p>
-      <p>
-        Constantly learning and innovating, I strive to create scalable, clean, and maintainable solutions that drive real-world impact. I am dedicated to merging advanced research with practical applications – a vision that guides my work and future endeavors.
-      </p>
+      <div class="about-content">
+        <p>
+          I am a recent Computer Science graduate from Brac University, equipped with a robust foundation in problem-solving, machine learning, cybersecurity, and software engineering. My academic journey has been marked by hands-on experience in developing secure web applications and crafting efficient data pipelines for large datasets, such as my thesis project on 4D fMRI analysis using 3D CNN architectures for neurodevelopmental disorder detection.
+        </p>
+        <p>
+          With proficiency in Python, C++, JavaScript, and SQL, I’ve also gained practical expertise in DevOps, Linux systems, and cloud-based deployments. Beyond technical skills, I’m passionate about education—mentoring over 100 students at Brac University in core computer science concepts and leading workshops on algorithms and data structures has been a rewarding part of my journey.
+        </p>
+        <p>
+          I thrive on continuous learning and innovation, aiming to deliver scalable, clean, and maintainable solutions that create real-world impact. My work is driven by a vision to bridge advanced research with practical applications, ensuring meaningful contributions to the tech landscape.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -77,49 +81,104 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="grid">
-        <!-- Sample Project Card 1 -->
         <div class="project-card">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Smart Contact Manager</h3>
-            </div>
-            <div class="project-card-back">
-              <p>A secure CRUD-based contact management system built with Spring Boot and MySQL.</p>
-              <a href="https://github.com/example" target="_blank">View Project</a>
-            </div>
+          <h3>Falcon Hunter</h3>
+          <p>An engaging 2D OpenGL game built with Python and OpenGL/GLUT, showcasing real-time performance optimization and efficient resource management.</p>
+          <a href="https://github.com/mH-13/Falcon-Hunter" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Smart And Secure Contact Manager</h3>
+          <p>A full-stack web application featuring secure authentication, built using Spring Boot, React, JWT, and MySQL.</p>
+          <a href="https://github.com/mH-13/Smart-And-Secure-Contact-Manager" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Bracu Student Essentials</h3>
+          <p>A platform enabling students to trade essential items, built using PHP and SQL for a seamless campus experience.</p>
+          <a href="https://github.com/mH-13/Bracu_Student_Essentials" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+<!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Educational Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>B.Sc. in Computer Science</h3>
+            <p>Brac University, Dhaka, Bangladesh (2024)</p>
+            <ul>
+              <li>Relevant Courses: Cloud Computing, Machine Learning, Distributed Systems</li>
+              <li>Thesis: 3D CNN Architectures for Neurodevelopmental Disorder Detection</li>
+            </ul>
           </div>
         </div>
-        <!-- Sample Project Card 2 -->
-        <div class="project-card">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Bracu Student Essentials</h3>
-            </div>
-            <div class="project-card-back">
-              <p>A platform enabling students to trade essential items, built using PHP and SQL.</p>
-              <a href="https://github.com/example" target="_blank">View Project</a>
-            </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>HSC in Science</h3>
+            <p>Rangpur Government College</p>
+            <p>Participated in Math and Physics Olympiad</p>
           </div>
         </div>
-        <!-- Add more project cards as your portfolio grows -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>SSC in Science</h3>
+            <p>Gaibandha Government Boys High School</p>
+            <p>District champion in iGen competition</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="skills" class="section section-alt">
     <div class="container">
       <h2>Skills</h2>
-      <div class="grid grid-skills">
-        <div>Python</div>
-        <div>C++</div>
-        <div>JavaScript</div>
-        <div>SQL</div>
-        <div>Machine Learning</div>
-        <div>Cybersecurity</div>
-        <div>DevOps</div>
-        <div>React</div>
+      <div class="skills">
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Bash</li>
+          <li>React</li>
+          <li>Spring Boot</li>
+          <li>TensorFlow</li>
+          <li>Keras</li>
+          <li>PyTorch</li>
+          <li>Docker</li>
+          <li>AWS EC2</li>
+          <li>Git</li>
+          <li>REST APIs</li>
+          <li>Data Engineering</li>
+          <li>Machine Learning</li>
+          <li>Cybersecurity</li>
+          <li>CI/CD Pipelines</li>
+          <li>RabbitMQ</li>
+          <li>Nilearn</li>
+          <li>Nibabel</li>
+          <li>NumPy</li>
+          <li>Pandas</li>
+          <li>MATLAB</li>
+        </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/ff7d5d7ecc4fea2864700be0f4d2e6339bfc1f20" target="_blank">Cleaning Data in Python</a></li>
+        <li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/c400af8a716e4b9b8810b7cff26dc623dfca863a" target="_blank">Feature Engineering for Machine Learning in Python</a></li>
+        <li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/5924ff79791562bf268370d80c39cdb8a60e0548" target="_blank">Machine Learning with Tree-Based Models in Python</a></li>
+      </ul>
     </div>
   </section>
 

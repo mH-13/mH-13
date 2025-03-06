@@ -31,7 +31,7 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 
-/* Star Field Background */
+/* Star Field Background with Enhanced Mouse Interactivity */
 const canvas = document.getElementById("background-animation");
 if (canvas) {
   const ctx = canvas.getContext("2d");
@@ -65,8 +65,13 @@ if (canvas) {
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
       star.y += star.speed;
-      // Slight horizontal parallax effect
-      star.x += (mouse.x - w / 2) * 0.00001 * star.speed;
+      const dx = mouse.x - star.x;
+      const dy = mouse.y - star.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < 100) {
+        star.x += dx * 0.05;
+        star.y += dy * 0.05;
+      }
       if (star.y > h) {
         star.y = 0;
         star.x = Math.random() * w;
@@ -75,19 +80,13 @@ if (canvas) {
   }
 
   function drawStars() {
-    // Set background based on mode
     if (body.classList.contains("dark")) {
-      // Dark mode background: deep black-blue
       ctx.fillStyle = "#0d0d0d";
     } else {
-      // Light mode background: soft off-white
       ctx.fillStyle = "#f5f5f5";
     }
     ctx.fillRect(0, 0, w, h);
-
-    // Set star color based on mode
     ctx.fillStyle = body.classList.contains("dark") ? "white" : "#333";
-
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
       ctx.beginPath();
@@ -106,6 +105,14 @@ if (canvas) {
   createStars();
   animate();
 }
+
+/* Scroll Progress Bar */
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercentage = (scrollTop / scrollHeight) * 100;
+  document.getElementById('progress-bar').style.width = scrollPercentage + '%';
+});
 
 /* EmailJS Integration */
 (function () {
