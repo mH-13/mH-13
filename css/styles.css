@@ -15,7 +15,7 @@ html {
 }
 
 body.light {
-  --bg-color: hsl(200, 45%, 9%);
+  --bg-color: hsl(199, 12%, 31%);
   --text-color: #111;
   --accent-color: #9370DB;
   --section-bg: #eee;
