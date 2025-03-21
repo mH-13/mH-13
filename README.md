@@ -109,7 +109,6 @@
 
 </div>
 
----
 <!-- lets connect -->
 <div align="center">
 
@@ -118,7 +117,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00FF00&center=true&width=600&lines=Building+Tomorrow's+Tech+Today;Code+%E2%9A%99%EF%B8%8F+Secure+%F0%9F%94%92+Innovate+%F0%9F%9A%80" alt="Typing SVG">
 </div>
 
----
 
 <!-- ### 📌 Value Proposition
 <div align="center">
