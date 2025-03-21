@@ -112,6 +112,7 @@
 
 ### 📌 Value Proposition
 <div align="center">
+
 ```text
 🚀 Full-Stack Technical Arsenal:
    ✔️ A fresh gradute but good Coding Experience
@@ -125,10 +126,3 @@
    ★ Security-Focused Positions
    ★ Innovative Tech Collaborations
 </div>
-
----
-
-<!-- Wave Footer -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=f0f4f8&height=90&section=footer" alt="Footer wave">
-</p>
