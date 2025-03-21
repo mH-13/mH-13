@@ -110,7 +110,7 @@
 </div>
 
 ---
-
+<!-- lets connect -->
 <div align="center">
 
   <h3>🚀 Let's Connect & Innovate!</h3>
@@ -120,7 +120,7 @@
 
 ---
 
-### 📌 Value Proposition
+<!-- ### 📌 Value Proposition
 <div align="center">
 
 ```text
@@ -135,4 +135,4 @@
    ★ ML Engineering Opportunities
    ★ Security-Focused Positions
    ★ Innovative Tech Collaborations
-</div>
+</div> -->
