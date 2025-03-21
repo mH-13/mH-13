@@ -90,12 +90,12 @@
 ### 📈 GitHub Analytics
 
 <div align="center">
-  
-| **Stats** | **Languages** | **Streak** |
-|-----------|---------------|------------|
-| <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&theme=default&title_color=2d3436&text_color=636e72&icon_color=4a4a4a&hide_border=true&bg_color=00000000" width="400"> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&theme=default&title_color=2d3436&text_color=636e72&hide_border=true&bg_color=00000000" width="300"> | <img src="https://streak-stats.demolab.com?user=mH-13&theme=default&hide_border=true&background=00000000&dates=636e72&stroke=2d3436&ring=4a4a4a&fire=4a4a4a&currStreakNum=2d3436" width="400"> |
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mH-13&theme=react-light&bg_color=ffffff00&color=4a4a4a&line=2d3436&hide_border=true&area=true&point=2d3436)
+| **Development Analytics** | **Language Distribution** | **Continuity** |
+|---------------------------|---------------------------|----------------|
+| <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&title_color=6C47FF&text_color=CFD7E6&icon_color=8A63FF&hide_border=true&bg_color=0A0F2C&include_all_commits=true&count_private=true&line_height=28" width="400"> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&title_color=6C47FF&text_color=A3ACBF&hide_border=true&bg_color=0A0F2C&langs_count=8" width="300"> | <img src="https://streak-stats.demolab.com?user=mH-13&theme=algolia&hide_border=true&background=0A0F2C&dates=5C677D&stroke=6C47FF&ring=8A63FF&fire=6C47FF&currStreakNum=CFD7E6" width="400"> |
+
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=mH-13&theme=react-dark&bg_color=0A0F2C&color=6C47FF&line=8A63FF&hide_border=true&area=true&area_color=6C47FF40)
 
 </div>
 
