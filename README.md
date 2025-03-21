@@ -91,11 +91,21 @@
 
 <div align="center">
 
-| **Development Analytics** | **Language Distribution** | **Continuity** |
-|---------------------------|---------------------------|----------------|
-| <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&title_color=6C47FF&text_color=CFD7E6&icon_color=8A63FF&hide_border=true&bg_color=0A0F2C&include_all_commits=true&count_private=true&line_height=28" width="400"> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&title_color=6C47FF&text_color=A3ACBF&hide_border=true&bg_color=0A0F2C&langs_count=8" width="300"> | <img src="https://streak-stats.demolab.com?user=mH-13&theme=algolia&hide_border=true&background=0A0F2C&dates=5C677D&stroke=6C47FF&ring=8A63FF&fire=6C47FF&currStreakNum=CFD7E6" width="400"> |
+<table style="border:none;border-collapse:collapse">
+  <tr style="background:transparent">
+    <td style="padding:8px;border:none">
+      <img src="https://github-readme-stats.vercel.app/api?username=mH-13&show_icons=true&title_color=6C47FF&text_color=CFD7E6&icon_color=8A63FF&hide_border=true&bg_color=0A0F2C&include_all_commits=true&count_private=true&line_height=28" style="border-radius:12px;box-shadow:0 8px 24px rgba(108,71,255,0.12)">
+    </td>
+    <td style="padding:8px;border:none">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mH-13&layout=compact&title_color=6C47FF&text_color=A3ACBF&hide_border=true&bg_color=0A0F2C&langs_count=8" style="border-radius:12px;box-shadow:0 8px 24px rgba(108,71,255,0.12)">
+    </td>
+    <td style="padding:8px;border:none">
+      <img src="https://streak-stats.demolab.com?user=mH-13&theme=algolia&hide_border=true&background=0A0F2C&dates=5C677D&stroke=6C47FF&ring=8A63FF&fire=6C47FF&currStreakNum=CFD7E6" style="border-radius:12px;box-shadow:0 8px 24px rgba(108,71,255,0.12)">
+    </td>
+  </tr>
+</table>
 
-![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=mH-13&theme=react-dark&bg_color=0A0F2C&color=6C47FF&line=8A63FF&hide_border=true&area=true&area_color=6C47FF40)
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=mH-13&theme=react-dark&bg_color=0A0F2C&color=6C47FF&line=8A63FF&hide_border=true&area=true&area_color=6C47FF40&custom_title=CODING%20ACTIVITY&height=300)
 
 </div>
 
