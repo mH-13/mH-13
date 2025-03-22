@@ -19,26 +19,17 @@
     <a href="https://mh-13.github.io/mH-13/" target="_blank">
       <img src="https://img.shields.io/badge/-Portfolio-2d3436?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
     </a>
-    <a href="https://github.com/mH-13" target="_blank">
-      <img src="https://img.shields.io/badge/-GitHub-2d3436?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-    </a>
   </p>
 </div>
 
 ---
-
-### 🎯 Professional Highlights
-<div align="center">
-  
-| **Area**               | **Achievements**                                                                 |
-|------------------------|---------------------------------------------------------------------------------|
-| 🏆 **Competitions**     | Ranked in Top 1% Competitive Programming • picoCTF Finalist                     |
-| 🧠 **AI Research**      | Developed 3D CNN for Medical Diagnostics (95% Accuracy)                         |
-| 🔐 **Security**         | Implemented Secure Auth Systems • CTF Experience (OWASP Top 10)                 |
-| ☁️ **Cloud**            | Deployed Scalable Microservices on GCP • Optimized CI/CD Pipelines              |
-| 🎓 **Mentorship**       | Taught 100+ Students in Python/C++ • Open Source Contributor                    |
-
-</div>
+### 🎯 Quick Facts
+- 🎓 CS Graduate @ BRAC University
+- 🏆 Competitive Programming Champion | picoCTF Participant
+- 🔬 AI Researcher: 3D CNN Architect for Medical Diagnostics
+- 👨🏫 Tech Mentor: Python & C++ Instructor
+- 🌱 Currently Exploring: Cloud Architecture & LLM Development
+- ⚡ Fun Fact: Chess Strategist ♟️ | Open Source Contributor 📂 | Tech Tinkerer 🔧
 
 ---
 
