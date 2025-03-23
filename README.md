@@ -22,7 +22,7 @@
   </p>
 </div>
 
----
+
 ### 🎯 Quick Facts
 - 🎓 CS Graduate @ BRAC University
 - 🏆 Competitive Programming Champion | picoCTF Participant
