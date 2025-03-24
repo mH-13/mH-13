@@ -29,7 +29,7 @@
 - 🔬 AI Researcher: 3D CNN Architect for Medical Diagnostics
 - 👨🏫 Tech Mentor: Python & C++ Instructor
 - 🌱 Currently Exploring: Cloud Architecture & LLM Development
-- ⚡ Fun Fact: Chess Strategist ♟️ | Open Source Contributor 📂 | Tech Tinkerer 🔧
+- ⚡ Fun Fact: Chess Strategist ♟️ | Open Source Contributor 📂 | Tech Tinkerer & Problem Solver 🔧
 
 ---
 
