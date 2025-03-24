@@ -24,6 +24,7 @@ body.light {
   --nav-bg: #f2f2f2;
 }
 
+
 /* Base Styles */
 body {
   margin: 0;
@@ -33,6 +34,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
 }
+
 
 /* Scroll Progress Bar */
 #progress-bar {
@@ -46,6 +48,7 @@ body {
   transition: width 0.1s ease;
 }
 
+
 /* Position the Canvas Behind Everything */
 #background-animation {
   position: fixed;
@@ -54,6 +57,7 @@ body {
   z-index: -1;
   display: block;
 }
+
 
 /* Navigation */
 .nav {
@@ -111,6 +115,7 @@ body {
 .toggle-btn:hover {
   background-color: var(--border-color);
 }
+
 
 /* Hero Section */
 .hero {
@@ -170,6 +175,7 @@ body {
 .btn:hover {
   background-color: #7B68EE; /* Slightly darker purple for hover */
 }
+
 
 /* Sections */
 .section {
