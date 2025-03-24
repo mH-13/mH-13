@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
 /* Dark Mode Toggle */
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 const body = document.body;
@@ -30,6 +31,7 @@ darkModeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", "dark");
   }
 });
+
 
 /* Star Field Background with Enhanced Mouse Interactivity */
 const canvas = document.getElementById("background-animation");
@@ -106,6 +108,7 @@ if (canvas) {
   animate();
 }
 
+
 /* Scroll Progress Bar */
 window.addEventListener('scroll', () => {
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -113,6 +116,7 @@ window.addEventListener('scroll', () => {
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
   document.getElementById('progress-bar').style.width = scrollPercentage + '%';
 });
+
 
 /* EmailJS Integration */
 (function () {
