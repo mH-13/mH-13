@@ -6,7 +6,7 @@
 <!-- Intro Section -->
 <div align="center">
   <h1 style="color: #2d3436;">👋 Hi, I'm Mehedi Hasan</h1>
-  <h3 style="color: #636e72;">Full-Stack Developer | ML Researcher | Security Engineer</h3>
+  <h3 style="color: #636e72;">Full-Stack Developer | ML Researcher | Cyber Security Enthusiast </h3>
 
   <!-- Social Links with Logos -->
   <p>
@@ -25,7 +25,7 @@
 
 ### 🎯 Quick Facts
 - 🎓 CS Graduate @ BRAC University
-- 🏆 Competitive Programming Champion | picoCTF Participant
+- 🏆 Competitive Programming Participant | picoCTF Participant
 - 🔬 AI Researcher: 3D CNN Architect for Medical Diagnostics
 - 👨🏫 Tech Mentor: Python & C++ Instructor
 - 🌱 Currently Exploring: Cloud Architecture & LLM Development
