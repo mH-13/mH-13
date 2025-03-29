@@ -163,21 +163,7 @@ if (preloader) {
     }
   }, 3000);
 }
-/* Back to Top Button */
-const backToTopButton = document.getElementById("back-to-top"); 
-if (backToTopButton) {
-  window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 200) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  });
 
-  backToTopButton.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-}
 /* Typewriter Effect */
 const typewriter = document.querySelector(".typewriter");
 const text = "Welcome to My Portfolio!";
@@ -190,71 +176,3 @@ function type() {
     setTimeout(type, typingSpeed);
   }
 } 
-
-document.addEventListener("DOMContentLoaded", type);
-
-/* Image Gallery with Lightbox */
-const galleryImages = document.querySelectorAll(".gallery img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeLightbox = document.getElementById("close-lightbox");
-const lightboxCaption = document.getElementById("lightbox-caption");
-galleryImages.forEach((img) => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "block";
-    lightboxImg.src = img.src;
-    lightboxCaption.textContent = img.alt || "";
-  });
-});
-closeLightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
-  }
-});
-
-/* Responsive Navigation Menu */
-const navToggle = document.getElementById("nav-toggle");
-const navMenu = document.getElementById("nav-menu");
-const navLinks = document.querySelectorAll(".nav-link");
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-  });
-});
-/* Smooth Scroll to Section */
-const sections = document.querySelectorAll("section");
-const navLinksSmooth = document.querySelectorAll(".nav-link");
-const observerOptions = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.1
-};
-const observerCallback = (entries) => {
-  entries.forEach((entry) => {
-    const id = entry.target.getAttribute("id");
-    const navLink = document.querySelector(`.nav-link[href="#${id}"]`);
-    if (entry.isIntersecting) {
-      navLink.classList.add("active");
-    } else {
-      navLink.classList.remove("active");
-    }
-  });
-};
-
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-sections.forEach((section) => {
-  observer.observe(section);
-});
-
-/* Contact Form Validation */
-
-
-
-
-
