@@ -33,6 +33,7 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 
+
 /* Star Field Background with Enhanced Mouse Interactivity */
 const canvas = document.getElementById("background-animation");
 if (canvas) {
@@ -52,6 +53,7 @@ if (canvas) {
     mouse.y = e.clientY;
   });
 
+  // Create stars with random positions and speeds
   function createStars() {
     for (let i = 0; i < numStars; i++) {
       stars.push({
@@ -63,6 +65,7 @@ if (canvas) {
     }
   }
 
+  // Update stars position and add mouse interactivity
   function updateStars() {
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
@@ -81,6 +84,9 @@ if (canvas) {
     }
   }
 
+
+  // Draw stars with a gradient effect
+
   function drawStars() {
     if (body.classList.contains("dark")) {
       ctx.fillStyle = "#0d0d0d";
@@ -97,13 +103,14 @@ if (canvas) {
     }
   }
 
+  // Animate the stars 
   function animate() {
     updateStars();
     drawStars();
     requestAnimationFrame(animate);
   }
 
-  initCanvas();
+  initCanvas(); 
   createStars();
   animate();
 }
