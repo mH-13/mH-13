@@ -145,3 +145,55 @@ document.getElementById("contact-form")?.addEventListener("submit", function (e)
     }
   );
 });
+
+/* Preloader */
+const preloader = document.getElementById("preloader");
+const mainContent = document.getElementById("main-content");
+if (preloader) {
+  window.addEventListener("load", () => {
+    preloader.style.display = "none";
+    mainContent.style.display = "block";
+  });
+
+  // Hide preloader after 3 seconds if the page is already loaded }
+  setTimeout(() => {
+    if (document.readyState === "complete") {
+      preloader.style.display = "none";
+      mainContent.style.display = "block";
+    }
+  }, 3000);
+}
+/* Back to Top Button */
+const backToTopButton = document.getElementById("back-to-top"); 
+if (backToTopButton) {
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 200) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+}
+/* Typewriter Effect */
+const typewriter = document.querySelector(".typewriter");
+const text = "Welcome to My Portfolio!";
+let index = 0;
+const typingSpeed = 100; // Adjust the speed of typing here
+function type() {
+  if (index < text.length) {
+    typewriter.textContent += text.charAt(index);
+    index++;
+    setTimeout(type, typingSpeed);
+  }
+} 
+
+document.addEventListener("DOMContentLoaded", type);
+
+/* Image Gallery with Lightbox */
+const galleryImages = document.querySelectorAll(".gallery img");
+
+
