@@ -252,6 +252,9 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
+/* Contact Form Validation */
+
+
 
 
 
