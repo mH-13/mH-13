@@ -42,6 +42,8 @@
   <img src="https://img.shields.io/badge/Java-2d3436?style=flat-square&logo=java" alt="Java">
   <img src="https://img.shields.io/badge/JavaScript-2d3436?style=flat-square&logo=javascript" alt="JavaScript">
   <img src="https://img.shields.io/badge/TypeScript-2d3436?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/HTML5-2d3436?style=flat-square&logo=html5" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-2d3436?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
 </div>
 
 #### **Frontend & Mobile**
@@ -56,6 +58,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Node.js-2d3436?style=flat-square&logo=node.js" alt="Node.js">
   <img src="https://img.shields.io/badge/NestJS-2d3436?style=flat-square&logo=nestjs" alt="NestJS">
+  <img src="https://img.shields.io/badge/SQL-2d3436?style=flat-square&logo=postgresql" alt="SQL">
   <img src="https://img.shields.io/badge/MongoDB-2d3436?style=flat-square&logo=mongodb" alt="MongoDB">
   <img src="https://img.shields.io/badge/PostgreSQL-2d3436?style=flat-square&logo=postgresql" alt="PostgreSQL">
 </div>
