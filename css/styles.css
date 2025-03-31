@@ -372,6 +372,28 @@ body {
   color: var(--accent-color);
 }
 
+
+
+/* Key Achievements Section */
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.highlights-list li {
+  background-color: var(--section-bg-trans);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.highlights-list li strong {
+  color: var(--accent-color);
+}
+
+
 /* Contact Form */
 .contact-form {
   max-width: 500px;

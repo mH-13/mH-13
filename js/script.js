@@ -171,3 +171,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   });
 });
+
+
+// Fade-in animation for Key Achievements section
+document.addEventListener("DOMContentLoaded", () => {
+  const highlightsSection = document.getElementById("highlights");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  
+  if (highlightsSection) {
+    observer.observe(highlightsSection);
+  }
+});
+
