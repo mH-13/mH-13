@@ -19,18 +19,23 @@
   <header class="nav">
     <div class="nav-left">
       <img src="images/disk.jpg" alt="Playin iternal Music" class="logo-img" />
-      <!-- <h1 class="site-title">Mehedi Hasan</h1> -->
     </div>
-    <nav class="nav-links" > 
+    <!-- Hamburger Button for Mobile -->
+    <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <!-- Navigation Links -->
+    <nav id="nav-links" class="nav-links"> 
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- Dark Mode Toggle -->
     <button id="dark-mode-toggle" class="toggle-btn">
       <i id="dark-mode-icon" class="fas fa-sun"></i>
     </button>
@@ -52,9 +57,12 @@
         }, 2000);
       </script>
       <p class="hero-subtitle">
-        Hello there 👋 I am Mehedi Hasan 🌠 A Computer Science Graduate 💻  Passionate about ML, AI, Cybersecurity, and Software Engineering.
+        Hello there 👋 I am Mehedi Hasan 🌠 A Computer Science Graduate 💻 Passionate about ML, AI, Cybersecurity, and Software Engineering.
       </p>
-      <a href="#projects" class="btn">View Projects</a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="cv.pdf" class="btn download-btn" download>Download CV</a>
+      </div>
     </div>
   </section>
 
@@ -64,13 +72,13 @@
       <h2>About Me</h2>
       <div class="about-content">
         <p>
-          I am a recent Computer Science graduate from Brac University, equipped with a robust foundation in problem-solving, machine learning, cybersecurity, and software engineering. My academic journey has been marked by hands-on experience in developing secure web applications and crafting efficient data pipelines for large datasets, such as my thesis project on 4D fMRI analysis using 3D CNN architectures for neurodevelopmental disorder detection.
+          I am a recent Computer Science graduate from Brac University, equipped with a robust foundation in problem-solving, machine learning, cybersecurity, and software engineering. My academic journey has been marked by hands-on experience in developing secure web applications and crafting efficient data pipelines.
         </p>
         <p>
-          With proficiency in Python, C++, JavaScript, and SQL, I’ve also gained practical expertise in DevOps, Linux systems, and cloud-based deployments. Beyond technical skills, I’m passionate about education—mentoring over 100 students at Brac University in core computer science concepts and leading workshops on algorithms and data structures has been a rewarding part of my journey.
+          With proficiency in Python, C++, JavaScript, and SQL, I’ve also gained practical expertise in DevOps, Linux systems, and cloud-based deployments. I’ve mentored over 100 students and led workshops on core computer science topics.
         </p>
         <p>
-          I thrive on continuous learning and innovation, aiming to deliver scalable, clean, and maintainable solutions that create real-world impact. My work is driven by a vision to bridge advanced research with practical applications, ensuring meaningful contributions to the tech landscape.
+          I thrive on continuous learning and innovation, aiming to deliver scalable, clean, and maintainable solutions that create real-world impact.
         </p>
       </div>
     </div>
@@ -83,7 +91,7 @@
       <div class="grid">
         <div class="project-card">
           <h3>Falcon Hunter</h3>
-          <p>An engaging 2D OpenGL game built with Python and OpenGL/GLUT, showcasing real-time performance optimization and efficient resource management.</p>
+          <p>An engaging 2D OpenGL game built with Python and OpenGL/GLUT, showcasing real-time performance optimization.</p>
           <a href="https://github.com/mH-13/Falcon-Hunter" target="_blank">View on GitHub</a>
         </div>
         <div class="project-card">
@@ -100,9 +108,31 @@
     </div>
   </section>
 
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>Software Engineering Intern</h3>
+            <p>XYZ Tech Solutions, Summer 2023</p>
+            <p>Worked on developing microservices and RESTful APIs using Node.js and Express.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>Research Assistant</h3>
+            <p>Brac University Lab, 2022-2023</p>
+            <p>Contributed to a research project on 3D CNN architectures for neurodevelopmental disorder detection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Education Section -->
-<!-- Education Section -->
-  <section id="education" class="section">
+  <section id="education" class="section section-alt">
     <div class="container">
       <h2>Educational Journey</h2>
       <div class="timeline">
@@ -110,9 +140,7 @@
           <div class="timeline-content">
             <h3>B.Sc. in Computer Science</h3>
             <p>Brac University, 2024</p>
-            <p>CGPA: 3.63/4.00 </p>
-            <p>Dean’s List: Spring 2021, Spring 2024</p>
-            <p>Relevant Courses: Cloud Computing, Machine Learning, Distributed Systems</p>
+            <p>CGPA: 3.63/4.00 | Dean’s List: Spring 2021, Spring 2024</p>
             <p>Thesis: 3D CNN Architectures for Neurodevelopmental Disorder Detection</p>
           </div>
         </div>
@@ -120,61 +148,50 @@
           <div class="timeline-content">
             <h3>HSC in Science</h3>
             <p>Rangpur Government College</p>
-            <p>GPA 5.00</p>
-            <p>Participated in Math and Physics Olympiad</p>
+            <p>GPA 5.00 | Participated in Math and Physics Olympiad</p>
           </div>
         </div>
         <div class="timeline-item left">
           <div class="timeline-content">
             <h3>SSC in Science</h3>
             <p>Gaibandha Government Boys High School</p>
-            <p>GPA 5.00</p>
-            <p>District champion in iGen competition</p>
+            <p>GPA 5.00 | District champion in iGen competition</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
   <!-- Skills Section -->
-  <section id="skills" class="section section-alt">
+  <section id="skills" class="section">
     <div class="container">
       <h2>Skills</h2>
       <div class="skills">
         <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-          <li>C++</li>
-          <li>Java</li>
-          <li>Bash</li>
-          <li>React</li>
-          <li>Spring Boot</li>
-          <li>TensorFlow</li>
-          <li>Keras</li>
-          <li>PyTorch</li>
-          <li>Docker</li>
-          <li>AWS EC2</li>
-          <li>Git</li>
-          <li>REST APIs</li>
-          <li>Data Engineering</li>
-          <li>Machine Learning</li>
-          <li>Cybersecurity</li>
-          <li>CI/CD Pipelines</li>
-          <li>RabbitMQ</li>
-          <li>Nilearn</li>
-          <li>Nibabel</li>
-          <li>NumPy</li>
-          <li>Pandas</li>
-          <li>MATLAB</li>
+          <li>problem-solving <span class="skill-bar" data-level="90%"></span></li>
+          <li>Python, C++ <span class="skill-bar" data-level="90%"></span></li>
+          <li>JavaScript <span class="skill-bar" data-level="85%"></span></li>
+          <li>SQL <span class="skill-bar" data-level="80%"></span></li>
+          <li>HTML, CSS <span class="skill-bar" data-level="95%"></span></li>
+          <li>React <span class="skill-bar" data-level="80%"></span></li>
+          <li>REST APIs <span class="skill-bar" data-level="90%"></span></li>
+          <li>Git <span class="skill-bar" data-level="90%"></span></li>
+          <li>Machine Learning <span class="skill-bar" data-level="85%"></span></li>
+          <li>Data Engineering <span class="skill-bar" data-level="40%"></span></li>
+          <li>Cybersecurity <span class="skill-bar" data-level="40%"></span></li>
+          <li>Bash <span class="skill-bar" data-level="65%"></span> </li>
+          <li>Spring Boot <span class="skill-bar" data-level="40%"></span></li>
+          <li>NumPy, Pandas, TensorFlow, Keras, PyTorch <span class="skill-bar" data-level="90%"></span></li>
+          <li>Nilearn, Nibabel <span class="skill-bar" data-level="80%"></span></li>
+          <li>MATLAB <span class="skill-bar" data-level="52%"></span></li>
+          <li>Docker, AWS EC2, CI/CD Pipelines <span class="skill-bar" data-level="50%"></span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Certifications Section -->
-  <section id="certifications" class="section">
+  <section id="certifications" class="section section-alt">
     <div class="container">
       <h2>Certifications</h2>
       <ul class="cert-list">
@@ -184,6 +201,28 @@
       </ul>
     </div>
   </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active">
+          <p>"Mehedi is a dedicated and talented individual who always brings innovative ideas to the table."</p>
+          <h4>- Colleague</h4>
+        </div>
+        <div class="testimonial">
+          <p>"His passion for technology and commitment to excellence is evident in every project he undertakes."</p>
+          <h4>- Mentor</h4>
+        </div>
+        <div class="testimonial">
+          <p>"A quick learner and an excellent team player, Mehedi will be a valuable asset to any company."</p>
+          <h4>- Supervisor</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="section section-alt">
@@ -218,4 +257,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-

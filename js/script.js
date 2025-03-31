@@ -2,12 +2,16 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
+    // If mobile menu is open, close it when a link is clicked
+    const navLinks = document.getElementById("nav-links");
+    if (navLinks.classList.contains("active")) {
+      navLinks.classList.remove("active");
+    }
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
     });
   });
 });
-
 
 /* Dark Mode Toggle */
 const darkModeToggle = document.getElementById("dark-mode-toggle");
@@ -32,7 +36,13 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 
+/* Mobile Menu Toggle */
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 
 /* Star Field Background with Enhanced Mouse Interactivity */
 const canvas = document.getElementById("background-animation");
@@ -53,7 +63,6 @@ if (canvas) {
     mouse.y = e.clientY;
   });
 
-  // Create stars with random positions and speeds
   function createStars() {
     for (let i = 0; i < numStars; i++) {
       stars.push({
@@ -65,7 +74,6 @@ if (canvas) {
     }
   }
 
-  // Update stars position and add mouse interactivity
   function updateStars() {
     for (let i = 0; i < stars.length; i++) {
       const star = stars[i];
@@ -84,15 +92,8 @@ if (canvas) {
     }
   }
 
-
-  // Draw stars with a gradient effect
-
   function drawStars() {
-    if (body.classList.contains("dark")) {
-      ctx.fillStyle = "#0d0d0d";
-    } else {
-      ctx.fillStyle = "#f5f5f5";
-    }
+    ctx.fillStyle = body.classList.contains("dark") ? "#0d0d0d" : "#f5f5f5";
     ctx.fillRect(0, 0, w, h);
     ctx.fillStyle = body.classList.contains("dark") ? "white" : "#333";
     for (let i = 0; i < stars.length; i++) {
@@ -103,7 +104,6 @@ if (canvas) {
     }
   }
 
-  // Animate the stars 
   function animate() {
     updateStars();
     drawStars();
@@ -115,7 +115,6 @@ if (canvas) {
   animate();
 }
 
-
 /* Scroll Progress Bar */
 window.addEventListener('scroll', () => {
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -123,7 +122,6 @@ window.addEventListener('scroll', () => {
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
   document.getElementById('progress-bar').style.width = scrollPercentage + '%';
 });
-
 
 /* EmailJS Integration */
 (function () {
@@ -146,33 +144,30 @@ document.getElementById("contact-form")?.addEventListener("submit", function (e)
   );
 });
 
-/* Preloader */
-const preloader = document.getElementById("preloader");
-const mainContent = document.getElementById("main-content");
-if (preloader) {
-  window.addEventListener("load", () => {
-    preloader.style.display = "none";
-    mainContent.style.display = "block";
-  });
-
-  // Hide preloader after 3 seconds if the page is already loaded }
-  setTimeout(() => {
-    if (document.readyState === "complete") {
-      preloader.style.display = "none";
-      mainContent.style.display = "block";
-    }
-  }, 3000);
+/* Testimonials Carousel */
+let testimonialIndex = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+if(testimonials.length) {
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.toggle("active", i === index);
+    });
+  }
+  function nextTestimonial() {
+    testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    showTestimonial(testimonialIndex);
+  }
+  setInterval(nextTestimonial, 5000);
 }
 
-/* Typewriter Effect */
-const typewriter = document.querySelector(".typewriter");
-const text = "Welcome to My Portfolio!";
-let index = 0;
-const typingSpeed = 100; // Adjust the speed of typing here
-function type() {
-  if (index < text.length) {
-    typewriter.textContent += text.charAt(index);
-    index++;
-    setTimeout(type, typingSpeed);
-  }
-} 
+/* Skill Bar Animation */
+document.addEventListener("DOMContentLoaded", () => {
+  const skillBars = document.querySelectorAll(".skill-bar");
+  skillBars.forEach(bar => {
+    const level = bar.getAttribute("data-level");
+    bar.style.width = "0";
+    setTimeout(() => {
+      bar.style.width = level;
+    }, 500);
+  });
+});
