@@ -41,10 +41,9 @@ darkModeToggle.addEventListener("click", () => {
 
 
 /* Mobile Menu Toggle */
-// This code is for the mobile menu toggle functionality 
 // It allows the user to open and close the mobile menu by clicking on the menu icon
 const menuToggle = document.getElementById("menu-toggle"); // Menu toggle button
-const navLinks = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav-links"); // 
 
 menuToggle.addEventListener("click", () => { // 
   navLinks.classList.toggle("active"); // 
