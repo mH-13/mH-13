@@ -14,27 +14,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /* Dark Mode Toggle */
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-const body = document.body;
-const darkModeIcon = document.getElementById("dark-mode-icon");
-const savedTheme = localStorage.getItem("theme") || "dark";
-body.classList.add(savedTheme);
-darkModeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
-body.style.transition = "background-color 0.3s, color 0.3s";
+const darkModeToggle = document.getElementById("dark-mode-toggle"); // Dark mode toggle button
+const body = document.body; // Body element
+const darkModeIcon = document.getElementById("dark-mode-icon"); // Icon element
+const savedTheme = localStorage.getItem("theme") || "dark"; // Default to dark mode if no theme is saved
+body.classList.add(savedTheme); // Set initial theme based on saved preference
+darkModeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon"; // Set icon based on theme
+body.style.transition = "background-color 0.3s, color 0.3s"; // Smooth transition for background and text color
 
-darkModeToggle.addEventListener("click", () => {
-  if (body.classList.contains("dark")) {
-    body.classList.remove("dark");
+// Event listener for dark mode toggle button
+//event listener is something that waits for an event to happen when the event happens, it runs a function
+//in this case, when the button is clicked, it runs the function 
+darkModeToggle.addEventListener("click", () => { 
+  if (body.classList.contains("dark")) { // Check if dark mode is currently active
+    body.classList.remove("dark"); 
     body.classList.add("light");
     darkModeIcon.className = "fas fa-moon";
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "light"); 
   } else {
-    body.classList.remove("light");
+    body.classList.remove("light"); // Remove light mode class
     body.classList.add("dark");
     darkModeIcon.className = "fas fa-sun";
     localStorage.setItem("theme", "dark");
   }
 });
+
 
 /* Mobile Menu Toggle */
 const menuToggle = document.getElementById("menu-toggle");
