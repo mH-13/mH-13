@@ -46,9 +46,10 @@ darkModeToggle.addEventListener("click", () => {
 const menuToggle = document.getElementById("menu-toggle"); // Menu toggle button
 const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+menuToggle.addEventListener("click", () => { // 
+  navLinks.classList.toggle("active"); // 
 });
+
 
 /* Star Field Background with Enhanced Mouse Interactivity */
 const canvas = document.getElementById("background-animation");
