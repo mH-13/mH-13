@@ -121,13 +121,17 @@ if (canvas) {
   animate();
 }
 
+
+
 /* Scroll Progress Bar */
 window.addEventListener('scroll', () => {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 
   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
   document.getElementById('progress-bar').style.width = scrollPercentage + '%';
 });
+
+
 
 /* EmailJS Integration */
 (function () {
@@ -150,21 +154,23 @@ document.getElementById("contact-form")?.addEventListener("submit", function (e)
   );
 });
 
+
+
 /* Testimonials Carousel */
-let testimonialIndex = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-if(testimonials.length) {
-  function showTestimonial(index) {
-    testimonials.forEach((t, i) => {
-      t.classList.toggle("active", i === index);
-    });
-  }
-  function nextTestimonial() {
-    testimonialIndex = (testimonialIndex + 1) % testimonials.length;
-    showTestimonial(testimonialIndex);
-  }
-  setInterval(nextTestimonial, 5000);
-}
+// let testimonialIndex = 0;
+// const testimonials = document.querySelectorAll(".testimonial");
+// if(testimonials.length) {
+//   function showTestimonial(index) {
+//     testimonials.forEach((t, i) => {
+//       t.classList.toggle("active", i === index);
+//     });
+//   }
+//   function nextTestimonial() {
+//     testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+//     showTestimonial(testimonialIndex);
+//   }
+//   setInterval(nextTestimonial, 5000);
+// }
 
 /* Skill Bar Animation */
 document.addEventListener("DOMContentLoaded", () => {
