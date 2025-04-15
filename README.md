@@ -13,6 +13,9 @@
     <a href="https://www.linkedin.com/in/mehedihasan-mh13/" target="_blank">
       <img src="https://img.shields.io/badge/-LinkedIn-2d3436?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
     </a>
+    <a href="https://www.hackerrank.com/profile/mehedi_hasan13" target = "_blank">
+      <img src="https://img.shields.io/badge/-HackerRank-2d3436?style=flat-square&logo=hackerrank&logoColor=white" alt="HackerRank">
+    <\a>
     <a href="mailto:mh13.mehedi.hasan@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/-Email-2d3436?style=flat-square&logo=gmail&logoColor=white" alt="Email">
     </a>
