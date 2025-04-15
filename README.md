@@ -15,7 +15,7 @@
     </a>
     <a href="https://www.hackerrank.com/profile/mehedi_hasan13" target = "_blank">
       <img src="https://img.shields.io/badge/-HackerRank-2d3436?style=flat-square&logo=hackerrank&logoColor=white" alt="HackerRank">
-    <\a>
+    </a>
     <a href="mailto:mh13.mehedi.hasan@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/-Email-2d3436?style=flat-square&logo=gmail&logoColor=white" alt="Email">
     </a>
